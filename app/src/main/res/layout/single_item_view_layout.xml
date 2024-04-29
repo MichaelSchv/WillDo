@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/itemView_CHCKBX_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemView_LBL_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:hint="Task Title"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/itemView_LLC_quantityAndUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemView_LBL_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:hint="Quantity"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemView_LBL_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:hint="Units"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemView_LBL_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:lines="1"
+            android:ellipsize="end"
+            android:visibility="gone"
+            android:hint="Comment (Optional)"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/itemView_IMG_itemImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/landscape_placeholder"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

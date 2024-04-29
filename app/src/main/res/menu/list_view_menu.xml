@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/listView_rename_list"
+        android:title="Rename"/>
+    <item
+        android:id="@+id/listView_participants"
+        android:title="Participants"/>
+    <item
+        android:id="@+id/listView_delete_list"
+        android:title="Delete"/>
+</menu>

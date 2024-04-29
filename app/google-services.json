@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "681423789017",
+    "project_id": "willdo-93511",
+    "storage_bucket": "willdo-93511.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681423789017:android:e587fd375afe44c1a817c8",
+        "android_client_info": {
+          "package_name": "com.example.willdo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxUhFLvm9V7YJUITduP-ul-0m13Ujwmy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
