@@ -27,18 +27,18 @@ public class ItemMenu {
         popupMenu.show();
         popupMenu.setOnMenuItemClickListener(menuItem -> {
             if(menuItem.getItemId() == R.id.contextmenu_BTN_edit){
-                handleEdit(item, context, listener);
+                handleEdit(item, context);
                 popupMenu.dismiss();
                 return true;
             }
             else if(menuItem.getItemId() == R.id.contextmenu_BTN_delete){
-                handleDelete(item, context,listener, currentList);
+                handleDelete(item, listener, currentList);
             }
             return false;
         });
     }
 
-    private void handleDelete(Item item, Context context, ItemContextMenuListener listener, List currentList) {
+    private void handleDelete(Item item, ItemContextMenuListener listener, List currentList) {
         currentList.removeItem(item);
 
         firestoreManager.updateList(currentList, new FirestoreManager.AddItemCallback() {
@@ -54,7 +54,7 @@ public class ItemMenu {
         });
     }
 
-    private void handleEdit(Item item, Context context, ItemContextMenuListener listener) {
+    private void handleEdit(Item item, Context context) {
         ListEditActivity.launchItemEditActivity(context,item, true);
     }
 
